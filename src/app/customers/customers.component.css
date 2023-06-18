@@ -1,0 +1,26 @@
+.customer-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 100px;
+  }
+  
+  .customer-table th,
+  .customer-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .customer-table th {
+    background-color: black;
+  }
+  
+  .customer-table tbody tr:nth-child(even) {
+    background-color: black;
+  }
+  
+   
+  .customer-table tbody tr:hover {
+    background-color: black;
+  }
+  

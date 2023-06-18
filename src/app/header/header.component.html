@@ -1,0 +1,27 @@
+<mat-toolbar class="bg-gradient-to-b from-purple-700  to-black" >
+  <button (click)="menuiconclicked()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+   <span >Sales&Productions</span>
+  <span class="example-spacer"></span>
+  <!-- icon 1 -->
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <!-- icon 1 end -->
+  <!-- icon 2 -->
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>help_outline</mat-icon>
+  </button>
+  <!-- icon 2 end -->
+  <!-- icon 3 -->
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>person_outline</mat-icon>
+
+         <mat-menu #menu="matMenu">
+        <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Sign Out</button>
+        </mat-menu>
+
+  </button>
+  <!-- icon 3 end -->
+</mat-toolbar>
